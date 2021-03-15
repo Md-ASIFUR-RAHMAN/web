@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>TEACHER..........DETAILS</h1>
+    <table>
+        <tr>
+            <th>Versity ID</th>
+            <th>Name</th>
+        </tr>
+        {% for i in teacher_key %}
+            <tr>
+        <td>{{ i.teacher_id}}</td>
+        <td>{{ i.teacher_name}}</td>
+
+            </tr>
+        {% endfor %}
+
+    </table>
+
+</body>
+</html>

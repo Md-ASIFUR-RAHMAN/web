@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>TEACHER..........DETAILS....ENTRY</h1>
+<form method="post">
+    {% csrf_token %}
+
+<input type="number" name="t_id" placeholder="Enter ID">
+<input type="text" name="name" placeholder="Enter name">
+
+    <input type="submit">
+    </form>
+
+{% for i in teacher_key %}
+    <h3>{{ i.teacher_id}} - {{ i.teacher_name }}</h3>
+{% endfor %}
+</body>
+</html>

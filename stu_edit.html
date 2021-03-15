@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.4/css/bootstrap.min.css"
+          integrity="sha512-FOS5ANNUsuvefA5Fm6hZBLsxqfF105LIysEgV8VNz29jZLVYIhI+MOLKPBmMXgkHhARFHf5pE7KbXOLE6TXW0A=="
+          crossorigin="anonymous" />
+</head>
+<body style= "text-align: center; background-color:teal">
+<div class="container">
+    <h1>STUDENT........UPDATE.....</h1>
+
+<br>
+<br>
+<form style="text-align: center" method="post">
+    {% csrf_token %}
+
+
+
+<input type="text" name="name" class="form-control" placeholder="Enter name" value="{{ student_key.name }}"><br><br>
+<input type="email" name="email" class="form-control" placeholder="Enter Email" value="{{ student_key.email }}"><br><br>
+<input type="text" name="cgpa" class="form-control" placeholder="Enter Cgpa" value="{{ student_key.cgpa }}"><br><br>
+
+
+    <input type="submit" class="btn btn-success" value="Add student">
+    </form>
+<br>
+
+
+</div>
+
+
+
+
+</body>
+</html>

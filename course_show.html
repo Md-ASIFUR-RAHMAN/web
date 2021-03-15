@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>COURSE..........DETAILS</h1>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Course</th>
+            <th>Credit</th>
+        </tr>
+        {% for i in course_key %}
+            <tr>
+        <td>{{ i.Title}}</td>
+        <td>{{ i.Code}}</td>
+        <td>{{ i.Credit}}</td>
+
+            </tr>
+        {% endfor %}
+
+    </table>
+</body>
+</html>
